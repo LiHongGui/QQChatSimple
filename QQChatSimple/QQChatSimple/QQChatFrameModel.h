@@ -9,7 +9,10 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 @class QQChatModel;
+
+//设置结构体
 @interface QQChatFrameModel : NSObject
+
 @property(nonatomic,assign) CGRect textLabel;
 @property(nonatomic,assign) CGRect timeLabel;
 @property(nonatomic,assign) CGRect typeNumber;

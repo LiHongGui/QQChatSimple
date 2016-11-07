@@ -21,8 +21,8 @@
      设置frame
      */
     //时间
-    CGFloat margin = 20;
-    CGFloat userIconWidth = margin *4;
+    CGFloat margin = 10;
+    CGFloat userIconWidth = margin *3;
     CGFloat timeLabelX = 0;
     CGFloat timeLabelY = 0;
     CGFloat timelabelWidth = kScreen.width;
@@ -38,9 +38,9 @@
     //文本真实的size
    CGSize textLabelRealSize =  [qqChatModel.text boundingRectWithSize:textLabelSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:20]} context:nil].size;
 
-    CGFloat textLabelLeftX = kScreen.width - userIconWidth -2*margin - textLabelRealSize.width  - 2*margin;
+    CGFloat textLabelLeftX = kScreen.width - userIconWidth -2*margin - textLabelRealSize.width  - 4*margin;
     CGFloat textLabelY = CGRectGetMinX(_userIcon) + userIconWidth/2;
-    if (qqChatModel.type == 0) {
+    if (qqChatModel.type == QQUserTypeMe) {
         _textLabel = CGRectMake(textLabelRightX, textLabelY,textLabelRealSize.width , textLabelRealSize.height);
     }else {
          _textLabel = CGRectMake(textLabelLeftX, textLabelY,textLabelRealSize.width , textLabelRealSize.height);
@@ -49,7 +49,7 @@
     CGFloat userIconY = CGRectGetMaxY(_timeLabel) + margin;
 
 
-    if (qqChatModel.type == 0) {
+    if (qqChatModel.type == QQUserTypeMe) {
 
         _userIcon = CGRectMake(margin, userIconY, userIconWidth, userIconWidth);
     }else {

@@ -74,9 +74,20 @@
     QQChatModel *qqChatModel = _qqChatFrameModel.qqChatModel;
 
 
+    //设置时间
+    _timeLabel.text = qqChatModel.time;
+    //设置时间是否隐藏
+    _timeLabel.hidden = qqChatModel.isHiddenTimeLabel;
+    _timeLabel.textAlignment = NSTextAlignmentCenter;
+    //设置内容
+    [_contentButton setTitle:qqChatModel.text forState:UIControlStateNormal];
+    //    [_contentButton setBackgroundImage:[UIImage imageNamed:@"chat_recive_press_pic"] forState:UIControlStateHighlighted];
+    [_contentButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+
+    //    [_contentButton setBackgroundColor:[UIColor orangeColor]];
     //设置头像---判断
-    
-    if (qqChatModel.type == 1) {
+
+    if (qqChatModel.type == QQUserTypeOthers) {
 
         _userImageView.image = [UIImage imageNamed:@"me"];
 //        //取出image
@@ -107,17 +118,6 @@
         [_contentButton setBackgroundImage:image forState:UIControlStateNormal];
     }
 
-    //设置时间
-    _timeLabel.text = qqChatModel.time;
-    #warning 关联隐藏属性
-//    _timeLabel.hidden = qqChatModel.isHiddenTimeLabel;
-    _timeLabel.textAlignment = NSTextAlignmentCenter;
-    //设置内容
-    [_contentButton setTitle:qqChatModel.text forState:UIControlStateNormal];
-//    [_contentButton setBackgroundImage:[UIImage imageNamed:@"chat_recive_press_pic"] forState:UIControlStateHighlighted];
-    [_contentButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-
-//    [_contentButton setBackgroundColor:[UIColor orangeColor]];
 
 }
 

@@ -234,7 +234,7 @@
 				TargetAttributes = {
 					1CCAC3261DCACF0E00C7A2B9 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 6VQT7QJ3A6;
+						DevelopmentTeam = LXU7268T7F;
 						ProvisioningStyle = Automatic;
 					};
 					1CCAC33F1DCACF0F00C7A2B9 = {
@@ -457,13 +457,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = 6VQT7QJ3A6;
+				DEVELOPMENT_TEAM = LXU7268T7F;
 				INFOPLIST_FILE = QQChatSimple/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lihonggui1988.com.QQChatSimple;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -472,13 +472,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = 6VQT7QJ3A6;
+				DEVELOPMENT_TEAM = LXU7268T7F;
 				INFOPLIST_FILE = QQChatSimple/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lihonggui1988.com.QQChatSimple;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
